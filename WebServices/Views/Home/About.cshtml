@@ -1,0 +1,29 @@
+﻿@using System.Configuration;
+
+@model IndexViewModel
+
+<h1>About project</h1>
+
+<div class="description">
+    <p class="description-title">Idea</p>
+    <p>This project gives a brief overview of the implementation and purpose of web services.</p>
+</div>
+
+<div class="description">
+    <p class="description-title">Used data</p>
+    <p>Used data are from public api: <a href="https://api.publicapis.org/entries" target="_blank">https://api.publicapis.org/entries</a></p>
+</div>
+
+<div class="description">
+    <p class="description-title">REST web service</p>
+    <p><a href="@Url.Action("Index", "Help")">Link to web service description &raquo;</a></p>
+    <p><a href="@Model.restApiUrl" target="_blank">See JSON &raquo;</a></p>
+</div>
+
+<div class="description">
+    <p class="description-title">SOAP web service</p>
+    <p><a href="@ConfigurationManager.AppSettings["SOAPBASE"]" target="_blank">Link to web service description &raquo;</a></p>
+    <p><a href="@Model.soapApiUrl" target="_blank">See XML &raquo;</a></p>
+</div>
+
+

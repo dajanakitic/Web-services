@@ -1,0 +1,19 @@
+﻿@model IndexViewModel
+
+<div class="jumbotron">
+    <h1>Web services</h1>
+</div>
+
+<div class="row">
+    <div class="index-section col-md-6">
+        <h2>JSON</h2>
+        <p>Data in JSON format</p>
+        <p><a class="btn btn-default" href="@Model.restApiUrl" target="_blank">See JSON &raquo;</a></p>
+    </div>
+
+    <div class="index-section col-md-6">
+        <h2>XML</h2>
+        <p>Data in XML format</p>
+        <p><a class="btn btn-default" href="@Model.soapApiUrl" target="_blank">See XML &raquo;</a></p>
+    </div>
+</div>
